@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Protect PDF - पासवर्ड लगाएं</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .box {
+      background: #1e1e1e;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input[type="file"],
+    input[type="password"],
+    button {
+      margin-top: 10px;
+      padding: 12px;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    button {
+      background-color: #c30010;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff2020;
+    }
+  </style>
+</head>
+<body>
+  <h1>🔐 PDF पर पासवर्ड लगाएं</h1>
+  <div class="box">
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="pdf" accept="application/pdf" required><br>
+      <input type="password" name="password" placeholder="पासवर्ड दर्ज करें" required><br>
+      <button type="submit">Protect PDF</button>
+    </form>
+  </div>
+</body>
+</html>
